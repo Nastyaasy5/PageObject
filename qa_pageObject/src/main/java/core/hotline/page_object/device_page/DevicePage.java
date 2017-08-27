@@ -92,7 +92,7 @@ public class DevicePage extends AbstractPage {
         allOffersTab.click();
     }
 
-    public void getDescription(){
+    public void getDescriptionInFile(){
         String productTitle = deviceTitle.getText();;
         String fileName = "D://Description for " + productTitle + ".txt";
 

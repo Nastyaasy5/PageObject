@@ -55,7 +55,9 @@ public class HomePageTest extends CommonTest {
 
     @Test
     public void getListOfCategoriesInFileTesting(){
-
+        HomePage homePage = new HomePage(getDriver());
+        homePage.getListOfCategories();
+        homePage.getListOfCategoriesInFile();
     }
 
     @After

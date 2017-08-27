@@ -43,6 +43,11 @@ public class AbstractPage {
         builder.moveToElement(webElement).click().perform();
     }
 
+    public void hover(WebElement webElement) {
+        Actions builder = new Actions(driver);
+        builder.moveToElement(webElement).perform();
+    }
+
     public void waitForElementToBeShown(WebElement webElement) {
         try {
             if (!webElement.isDisplayed()) {

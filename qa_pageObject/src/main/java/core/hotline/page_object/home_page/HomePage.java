@@ -9,10 +9,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import static com.sun.jmx.snmp.ThreadContext.contains;
 
 @DefaultPath(defaultPath = "")
 public class HomePage extends AbstractPage {
@@ -32,8 +34,8 @@ public class HomePage extends AbstractPage {
     @FindAll({@FindBy(xpath = "//ul[contains(@class, \"menu\")]//li//a//b")})
     private List<WebElement> categoriesList;
 
-    @FindAll({@FindBy(xpath = "//div[@class=\"m-sub-box\" and contains(@style,'block;')]")})
-    private String subCategoriesList;
+    @FindAll({@FindBy(xpath = "//div[@class=\"m-sub-box\" and contains(@style,'block;')]//ul//li")})
+    private List<WebElement> subCategoriesList;
 
     private WebDriver driver;
 
@@ -59,7 +61,43 @@ public class HomePage extends AbstractPage {
                 loginform.getAttribute("style").contains("block"));
     }
 
-    public Map<String, String> getListOfCategoriesInFile(){
-        
+    public Map<String, List<String>> getListOfCategories(){
+        Map<String, List<String>> allCategoriesMap = new HashMap<String, List<String>>();
+        for(WebElement category : categoriesList.subList(0,2)){
+            moveToElement(category);
+            hover(category);
+            String categoryTitle = category.getText();
+            List<String> subCategoriesTitlesList = new ArrayList<String>();
+
+            for(WebElement subCategory : subCategoriesList){
+                String subCategoryTitle = subCategory.getText();
+                subCategoriesTitlesList.add(subCategoryTitle);
+            }
+            allCategoriesMap.put(categoryTitle, subCategoriesTitlesList);
+        }
+        return allCategoriesMap;
+    }
+
+    public void getListOfCategoriesInFile(){
+        Map <String,List<String>> allCategoriesMap = getListOfCategories();
+        String fileName = "D://All acategories.txt";
+
+        try(FileOutputStream fos=new FileOutputStream(fileName))
+        {
+            for(Map.Entry<String, List<String>> entry : allCategoriesMap.entrySet()) {
+                String key = entry.getKey();
+                byte[] keyBuffer = key.getBytes();
+                fos.write(keyBuffer, 0, keyBuffer.length);
+                for (String value : entry.getValue()) {
+                    byte[] valueBuffer = value.getBytes();
+                    fos.write(valueBuffer, 0, valueBuffer.length);
+                }
+            }
+        }
+
+        catch(IOException ex){
+
+            System.out.println(ex.getMessage());
+        }
     }
 }

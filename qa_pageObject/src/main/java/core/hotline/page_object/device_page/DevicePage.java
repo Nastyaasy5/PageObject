@@ -1,14 +1,13 @@
 package core.hotline.page_object.device_page;
 
-import core.hotline.page_object.common.AbstractPage;
-import core.hotline.page_object.common.annotations.DefaultPath;
+import core.common.AbstractPage;
+import core.common.annotations.DefaultPath;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 
-import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;

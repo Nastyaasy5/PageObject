@@ -1,7 +1,7 @@
 package core.hotline.page_object.home_page;
 
-import core.hotline.page_object.common.AbstractPage;
-import core.hotline.page_object.common.annotations.DefaultPath;
+import core.common.AbstractPage;
+import core.common.annotations.DefaultPath;
 import core.hotline.page_object.search_result_page.SearchResultPage;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;

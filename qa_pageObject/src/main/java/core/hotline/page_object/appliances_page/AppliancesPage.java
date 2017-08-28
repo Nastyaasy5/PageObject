@@ -1,13 +1,12 @@
 package core.hotline.page_object.appliances_page;
 
-import core.hotline.page_object.common.AbstractPage;
-import core.hotline.page_object.common.annotations.DefaultPath;
+import core.common.AbstractPage;
+import core.common.annotations.DefaultPath;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.Select;
 
 import java.util.ArrayList;
 import java.util.List;

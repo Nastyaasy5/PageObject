@@ -15,7 +15,7 @@ import static org.junit.Assert.assertTrue;
 @DefaultPath(defaultPath = "/sr/?q=Samsung")
 public class SearchResultPage extends AbstractPage {
 
-    @FindAll({@FindBy(xpath = "//a[@data-eventlabel=\"Product image\"]//img")})
+    @FindAll({@FindBy(xpath = "//a[@data-eventlabel=\"Product name\"]")})
     private List<WebElement> resultsList;
 
     @FindBy(xpath = "//h1[@datatype=\"card-title\"]")

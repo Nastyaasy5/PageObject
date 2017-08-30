@@ -25,7 +25,7 @@ public class HomePage extends AbstractPage {
     @FindBy(id="doSearch")
     private WebElement searchBtn;
 
-    @FindBy(xpath = "//span[@class=\"user ico-sm\"]//a")
+    @FindBy(xpath = "//b[text()='Войти']/..")
     private WebElement loginBtn;
 
     @FindBy(xpath = "//div[@id=\"lightbox-form\"]")
@@ -53,10 +53,10 @@ public class HomePage extends AbstractPage {
 
     public void openLoginForm() {
         loginBtn.click();
+        waitForElementToBeVisible(loginBtn);
     }
 
     public void checkLoginFormIsShown() {
-        waitForElementToBeShown(loginform);
         Assert.assertTrue("Login form is not shown",
                 loginform.getAttribute("style").contains("block"));
     }

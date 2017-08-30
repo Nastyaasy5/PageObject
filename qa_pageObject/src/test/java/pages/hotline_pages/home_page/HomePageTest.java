@@ -1,4 +1,4 @@
-package home_page;
+package pages.hotline_pages.home_page;
 
 import pages.common.CommonTest;
 import core.hotline.page_object.home_page.HomePage;

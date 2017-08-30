@@ -63,14 +63,19 @@ public class HomePage extends AbstractPage {
 
     public Map<String, List<String>> getListOfCategories(){
         Map<String, List<String>> allCategoriesMap = new HashMap<String, List<String>>();
+        String lineSeparator = System.getProperty("line.separator");
+        String categorySeparator = "------------------------";
+
         for(WebElement category : categoriesList.subList(0,2)){
+            //Used categoriesList.subList(0,2) to decrease time of execution of the test
             moveToElement(category);
             hover(category);
-            String categoryTitle = category.getText();
+            String categoryTitle = categorySeparator + lineSeparator + category.getText() +
+                    ":" + lineSeparator + categorySeparator + lineSeparator;
             List<String> subCategoriesTitlesList = new ArrayList<String>();
 
             for(WebElement subCategory : subCategoriesList){
-                String subCategoryTitle = subCategory.getText();
+                String subCategoryTitle = subCategory.getText() + lineSeparator;
                 subCategoriesTitlesList.add(subCategoryTitle);
             }
             allCategoriesMap.put(categoryTitle, subCategoriesTitlesList);
@@ -80,7 +85,7 @@ public class HomePage extends AbstractPage {
 
     public void getListOfCategoriesInFile(){
         Map <String,List<String>> allCategoriesMap = getListOfCategories();
-        String fileName = "D://All acategories.txt";
+        String fileName = "D://All categories.txt";
 
         try(FileOutputStream fos=new FileOutputStream(fileName))
         {
@@ -88,6 +93,7 @@ public class HomePage extends AbstractPage {
                 String key = entry.getKey();
                 byte[] keyBuffer = key.getBytes();
                 fos.write(keyBuffer, 0, keyBuffer.length);
+                
                 for (String value : entry.getValue()) {
                     byte[] valueBuffer = value.getBytes();
                     fos.write(valueBuffer, 0, valueBuffer.length);

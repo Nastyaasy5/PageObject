@@ -31,12 +31,12 @@
       <file leaf-file-name="TestPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pages/rozetka_pages/test_page/TestPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="33" column="30" lean-forward="false" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+            <state relative-caret-position="50">
+              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1357#1358#0" expanded="true" />
-                <element signature="e#1383#1384#0" expanded="true" />
+                <element signature="e#1358#1359#0" expanded="true" />
+                <element signature="e#1384#1385#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,7 +45,7 @@
       <file leaf-file-name="SearchResultPageTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pages/hotline_pages/search_result_page/SearchResultPageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
+            <state relative-caret-position="-137">
               <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -54,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomePageTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HomePageTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pages/hotline_pages/home_page/HomePageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="44" column="25" lean-forward="false" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
+            <state relative-caret-position="204">
+              <caret line="52" column="25" lean-forward="true" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -66,44 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomePage.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HomePage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/core/hotline/page_object/home_page/HomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="27" column="43" lean-forward="false" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchResultPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/core/hotline/page_object/search_result_page/SearchResultPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="17" column="69" lean-forward="false" selection-start-line="17" selection-start-column="69" selection-end-line="17" selection-end-column="69" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RozetkaSearchResultPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/core/rozetka/page_object/rozetka_search_result_page/RozetkaSearchResultPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="30" column="53" lean-forward="false" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
-              <folding>
-                <element signature="e#1241#1242#0" expanded="false" />
-                <element signature="e#1275#1276#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RozetkaComparizonPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/core/rozetka/page_object/rozetka_comparizon_page/RozetkaComparizonPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="20" column="36" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="36" />
+            <state relative-caret-position="283">
+              <caret line="95" column="16" lean-forward="false" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -153,15 +120,15 @@
         <option value="$PROJECT_DIR$/src/test/java/pages/rozetka_pages/home_page/HomePageTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/common/CommonTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/hotline_pages/appliances_page/AppliancesPageTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/hotline_pages/home_page/HomePageTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/hotline_pages/device_page/SamsungDevicePageTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/core/rozetka/page_object/home_page/HomePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/hotline_pages/search_result_page/SearchResultPageTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/core/rozetka/page_object/rozetka_home_page/RozetkaHomePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/core/rozetka/page_object/rozetka_comparizon_page/RozetkaComparizonPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/rozetka_pages/test_page/TestPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/core/rozetka/page_object/rozetka_search_result_page/RozetkaSearchResultPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/core/hotline/page_object/search_result_page/SearchResultPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/hotline_pages/home_page/HomePageTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/hotline_pages/search_result_page/SearchResultPageTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/rozetka_pages/test_page/TestPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/core/hotline/page_object/home_page/HomePage.java" />
       </list>
     </option>
@@ -254,6 +221,10 @@
               <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test_page" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -316,6 +287,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="home_page" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qa_pageObject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qa_pageObject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -468,33 +465,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HomePageTest.LoginFormAppearanceTesting (1)">
-    <configuration default="false" name="SearchResultPageTest.viewedItemsTesting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="search_result_page.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="qa_pageObject" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="search_result_page" />
-      <option name="MAIN_CLASS_NAME" value="search_result_page.SearchResultPageTest" />
-      <option name="METHOD_NAME" value="viewedItemsTesting" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.HomePageTest.getListOfCategoriesInFileTesting">
     <configuration default="false" name="HomePageTest.getListOfCategoriesInFileTesting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -586,6 +557,32 @@
       <option name="PACKAGE_NAME" value="pages.hotline_pages.home_page" />
       <option name="MAIN_CLASS_NAME" value="home_page.HomePageTest" />
       <option name="METHOD_NAME" value="LoginFormAppearanceTesting" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="HomePageTest.getListOfCategoriesInFileTesting (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="home_page.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="qa_pageObject" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="pages.hotline_pages.home_page" />
+      <option name="MAIN_CLASS_NAME" value="home_page.HomePageTest" />
+      <option name="METHOD_NAME" value="getListOfCategoriesInFileTesting" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -804,19 +801,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.SearchResultPageTest.viewedItemsTesting" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.HomePageTest.getListOfCategoriesInFileTesting" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TestPage.comparePropertiesTesting" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.HomePageTest.searchBarTesting" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.HomePageTest.LoginFormAppearanceTesting (1)" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.HomePageTest.getListOfCategoriesInFileTesting" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestPage.comparePropertiesTesting" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.HomePageTest.searchBarTesting" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.HomePageTest.LoginFormAppearanceTesting (1)" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.HomePageTest.getListOfCategoriesInFileTesting (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.HomePageTest.LoginFormAppearanceTesting (1)" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.HomePageTest.searchBarTesting" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TestPage.comparePropertiesTesting" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.HomePageTest.getListOfCategoriesInFileTesting" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.SearchResultPageTest.viewedItemsTesting" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.HomePageTest.getListOfCategoriesInFileTesting" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestPage.comparePropertiesTesting" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.HomePageTest.getListOfCategoriesInFileTesting (1)" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.HomePageTest.LoginFormAppearanceTesting (1)" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.HomePageTest.searchBarTesting" />
       </list>
     </recent_temporary>
   </component>
@@ -838,34 +835,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HomePageTest_LoginFormAppearanceTesting_(1) - 2017.08.30 at 20h 08m 19s.xml">
-      <configuration name="HomePageTest.LoginFormAppearanceTesting (1)" configurationId="JUnit" />
+    <history-entry file="HomePageTest_getListOfCategoriesInFileTesting - 2017.08.30 at 21h 10m 39s.xml">
+      <configuration name="HomePageTest.getListOfCategoriesInFileTesting" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HomePageTest_LoginFormAppearanceTesting_(1) - 2017.08.30 at 20h 10m 43s.xml">
-      <configuration name="HomePageTest.LoginFormAppearanceTesting (1)" configurationId="JUnit" />
+    <history-entry file="HomePageTest_getListOfCategoriesInFileTesting - 2017.08.30 at 21h 13m 10s.xml">
+      <configuration name="HomePageTest.getListOfCategoriesInFileTesting" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HomePageTest_LoginFormAppearanceTesting_(1) - 2017.08.30 at 20h 11m 42s.xml">
-      <configuration name="HomePageTest.LoginFormAppearanceTesting (1)" configurationId="JUnit" />
+    <history-entry file="HomePageTest_getListOfCategoriesInFileTesting - 2017.08.30 at 22h 10m 25s.xml">
+      <configuration name="HomePageTest.getListOfCategoriesInFileTesting" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HomePageTest_LoginFormAppearanceTesting_(1) - 2017.08.30 at 20h 12m 06s.xml">
-      <configuration name="HomePageTest.LoginFormAppearanceTesting (1)" configurationId="JUnit" />
+    <history-entry file="HomePageTest_getListOfCategoriesInFileTesting_(1) - 2017.08.30 at 20h 36m 40s.xml">
+      <configuration name="HomePageTest.getListOfCategoriesInFileTesting (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HomePageTest_LoginFormAppearanceTesting_(1) - 2017.08.30 at 20h 12m 55s.xml">
-      <configuration name="HomePageTest.LoginFormAppearanceTesting (1)" configurationId="JUnit" />
+    <history-entry file="HomePageTest_getListOfCategoriesInFileTesting_(1) - 2017.08.30 at 20h 43m 36s.xml">
+      <configuration name="HomePageTest.getListOfCategoriesInFileTesting (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HomePageTest_LoginFormAppearanceTesting_(1) - 2017.08.30 at 20h 16m 13s.xml">
-      <configuration name="HomePageTest.LoginFormAppearanceTesting (1)" configurationId="JUnit" />
+    <history-entry file="HomePageTest_getListOfCategoriesInFileTesting_(1) - 2017.08.30 at 20h 47m 47s.xml">
+      <configuration name="HomePageTest.getListOfCategoriesInFileTesting (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HomePageTest_searchBarTesting - 2017.08.30 at 20h 04m 14s.xml">
-      <configuration name="HomePageTest.searchBarTesting" configurationId="JUnit" />
+    <history-entry file="HomePageTest_getListOfCategoriesInFileTesting_(1) - 2017.08.30 at 20h 51m 19s.xml">
+      <configuration name="HomePageTest.getListOfCategoriesInFileTesting (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HomePageTest_searchBarTesting - 2017.08.30 at 20h 07m 57s.xml">
-      <configuration name="HomePageTest.searchBarTesting" configurationId="JUnit" />
+    <history-entry file="HomePageTest_getListOfCategoriesInFileTesting_(1) - 2017.08.30 at 20h 54m 39s.xml">
+      <configuration name="HomePageTest.getListOfCategoriesInFileTesting (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestPage_comparePropertiesTesting - 2017.08.28 at 21h 43m 34s.xml">
+    <history-entry file="TestPage_comparePropertiesTesting - 2017.08.30 at 22h 05m 19s.xml">
       <configuration name="TestPage.comparePropertiesTesting" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestPage_comparePropertiesTesting - 2017.08.28 at 21h 44m 30s.xml">
+    <history-entry file="TestPage_comparePropertiesTesting - 2017.08.30 at 22h 06m 39s.xml">
       <configuration name="TestPage.comparePropertiesTesting" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -919,7 +916,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/core/hotline/page_object/home_page/HomePage.java</url>
-          <line>72</line>
+          <line>77</line>
           <properties />
           <option name="timeStamp" value="81" />
         </line-breakpoint>
@@ -1137,8 +1134,8 @@
         <state relative-caret-position="323">
           <caret line="26" column="8" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="27" selection-end-column="44" />
           <folding>
-            <element signature="e#960#961#0" expanded="true" />
-            <element signature="e#989#990#0" expanded="true" />
+            <element signature="e#960#961#0" expanded="false" />
+            <element signature="e#989#990#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1155,7 +1152,7 @@
         <state relative-caret-position="136">
           <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="29" selection-end-column="1" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1179,28 +1176,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/rozetka_pages/test_page/TestPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="33" column="30" lean-forward="false" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1357#1358#0" expanded="true" />
-            <element signature="e#1383#1384#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/hotline_pages/search_result_page/SearchResultPageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/core/hotline/page_object/search_result_page/SearchResultPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1209,21 +1184,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/hotline/page_object/home_page/HomePage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/rozetka_pages/test_page/TestPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="27" column="43" lean-forward="false" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
-          <folding />
+        <state relative-caret-position="50">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1358#1359#0" expanded="true" />
+            <element signature="e#1384#1385#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/hotline_pages/search_result_page/SearchResultPageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-137">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/hotline_pages/home_page/HomePageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="44" column="25" lean-forward="false" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
+        <state relative-caret-position="204">
+          <caret line="52" column="25" lean-forward="true" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/hotline/page_object/home_page/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="95" column="16" lean-forward="false" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>

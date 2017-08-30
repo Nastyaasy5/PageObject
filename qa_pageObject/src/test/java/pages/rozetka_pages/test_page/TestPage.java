@@ -30,6 +30,7 @@ public class TestPage extends CommonTest {
         RozetkaHomePage homePage = new RozetkaHomePage(getDriver());
         RozetkaSearchResultPage searchResultPage = new RozetkaSearchResultPage(getDriver());
         RozetkaComparizonPage comparizonPage = new RozetkaComparizonPage(getDriver());
+
         homePage.searchByText("Iphone 7");
         searchResultPage.addItemsInCompareList();
         searchResultPage.openComparisonPage();

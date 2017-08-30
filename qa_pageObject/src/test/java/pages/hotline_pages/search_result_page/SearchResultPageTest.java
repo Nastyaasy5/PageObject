@@ -1,4 +1,4 @@
-package search_result_page;
+package pages.hotline_pages.search_result_page;
 
 import pages.common.CommonTest;
 import core.hotline.page_object.search_result_page.SearchResultPage;

@@ -15,6 +15,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 @DefaultPath(defaultPath = "")
 public class HomePage extends AbstractPage {
@@ -22,7 +23,7 @@ public class HomePage extends AbstractPage {
     @FindBy(id = "searchbox")
     private WebElement searchBar;
 
-    @FindBy(id="doSearch")
+    @FindBy(id = "doSearch")
     private WebElement searchBtn;
 
     @FindBy(xpath = "//b[text()='Войти']/..")
@@ -36,6 +37,8 @@ public class HomePage extends AbstractPage {
 
     @FindAll({@FindBy(xpath = "//div[@class=\"m-sub-box\" and contains(@style,'block;')]//ul//li")})
     private List<WebElement> subCategoriesList;
+
+    String lineSeparator = System.getProperty("line.separator");
 
     private WebDriver driver;
 
@@ -63,7 +66,6 @@ public class HomePage extends AbstractPage {
 
     public Map<String, List<String>> getListOfCategories(){
         Map<String, List<String>> allCategoriesMap = new HashMap<String, List<String>>();
-        String lineSeparator = System.getProperty("line.separator");
         String categorySeparator = "------------------------";
 
         for(WebElement category : categoriesList.subList(0,2)){
@@ -72,36 +74,35 @@ public class HomePage extends AbstractPage {
             hover(category);
             String categoryTitle = categorySeparator + lineSeparator + category.getText() +
                     ":" + lineSeparator + categorySeparator + lineSeparator;
-            List<String> subCategoriesTitlesList = new ArrayList<String>();
 
-            for(WebElement subCategory : subCategoriesList){
-                String subCategoryTitle = subCategory.getText() + lineSeparator;
-                subCategoriesTitlesList.add(subCategoryTitle);
-            }
+            List<String> subCategoriesTitlesList = getListOfSubTitles();
             allCategoriesMap.put(categoryTitle, subCategoriesTitlesList);
         }
         return allCategoriesMap;
     }
 
-    public void getListOfCategoriesInFile(){
-        Map <String,List<String>> allCategoriesMap = getListOfCategories();
+    public List<String> getListOfSubTitles() {
+        return subCategoriesList.stream()
+                .map(item -> item.getText() + lineSeparator)
+                .collect(Collectors.toList());
+    }
+
+    public void getListOfCategoriesInFile() {
+        Map<String, List<String>> allCategoriesMap = getListOfCategories();
         String fileName = "D://All categories.txt";
 
-        try(FileOutputStream fos=new FileOutputStream(fileName))
-        {
-            for(Map.Entry<String, List<String>> entry : allCategoriesMap.entrySet()) {
+        try (FileOutputStream fos = new FileOutputStream(fileName)) {
+            for (Map.Entry<String, List<String>> entry : allCategoriesMap.entrySet()) {
                 String key = entry.getKey();
                 byte[] keyBuffer = key.getBytes();
                 fos.write(keyBuffer, 0, keyBuffer.length);
-                
+
                 for (String value : entry.getValue()) {
                     byte[] valueBuffer = value.getBytes();
                     fos.write(valueBuffer, 0, valueBuffer.length);
                 }
             }
-        }
-
-        catch(IOException ex){
+        } catch (IOException ex) {
 
             System.out.println(ex.getMessage());
         }

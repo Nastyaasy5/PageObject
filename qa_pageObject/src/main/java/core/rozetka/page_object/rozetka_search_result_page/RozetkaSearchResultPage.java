@@ -16,6 +16,9 @@ public class RozetkaSearchResultPage extends AbstractPage {
     @FindBy(id = "comparison")
     private WebElement compareBtn;
 
+    @FindBy(xpath = "//span[@class='hub-i-count']")
+    private WebElement compareCounter;
+
     private WebDriver driver;
 
     public RozetkaSearchResultPage(WebDriver webDriver) {
@@ -24,13 +27,20 @@ public class RozetkaSearchResultPage extends AbstractPage {
     }
 
     public void addItemsInCompareList() {
-        hover(iPhone7CompareBtn);
-        waitForElementToBeShown(iPhone7CompareBtn);
-        iPhone7CompareBtn.click();
-        hover(iPhone7PlusCompareBtn);
-        waitForElementToBeShown(iPhone7PlusCompareBtn);
-        iPhone7PlusCompareBtn.click();
+        hoverAndClick(iPhone7CompareBtn);
+        hoverAndClick(iPhone7PlusCompareBtn);
     }
+
+    /*public void add(WebElement element){
+        int count = Integer.parseInt(compareCounter.getText());
+        if (compareCounter.getText() != "") {
+            if (compareCounter.getText().equals("" + count + "")) {
+                count++;
+            }
+            hover(element);
+            element.click();
+        }
+    }*/
 
     public void openComparisonPage(){
         compareBtn.click();

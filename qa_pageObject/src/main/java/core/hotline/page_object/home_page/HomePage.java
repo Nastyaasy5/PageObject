@@ -11,7 +11,6 @@ import org.openqa.selenium.support.FindBy;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -83,6 +82,7 @@ public class HomePage extends AbstractPage {
 
     public List<String> getListOfSubTitles() {
         return subCategoriesList.stream()
+                .filter(webElement->!webElement.getText().contains("Гид покупателя"))
                 .map(item -> item.getText() + lineSeparator)
                 .collect(Collectors.toList());
     }

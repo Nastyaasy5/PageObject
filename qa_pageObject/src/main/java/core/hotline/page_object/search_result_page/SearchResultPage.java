@@ -28,8 +28,7 @@ public class SearchResultPage extends AbstractPage {
     public List<String> getSearchResluts() {
         List<String> resultsTitles = new ArrayList<String>();
         for(WebElement  element : resultsList){
-            String text = element.getText();
-            resultsTitles.add(text);
+            resultsTitles.add(element.getText());
         }
         return resultsTitles;
     }

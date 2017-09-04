@@ -13,8 +13,10 @@ public class CommonTest {
 
     private WebDriver driver;
 
+    private static  final  MY_VARIABLE = "";
+
     public CommonTest() throws IOException {
-        PropertyUtils propertyUtils = new PropertyUtils();
+        final PropertyUtils propertyUtils = new PropertyUtils();
         //String browserDriver = propertyUtils.getProperty("browser.driver");
         driver = new ChromeDriver();
         driverSetUp();
@@ -37,7 +39,7 @@ public class CommonTest {
         driver.close();
     }
 
-    protected <T extends AbstractPage> String openPage(T page) throws IOException {
+    protected <T extends AbstractPage> String openPage(final T page) throws IOException {
         return WebDriverUtils.getDefaultPathByPage(page);
     }
 }

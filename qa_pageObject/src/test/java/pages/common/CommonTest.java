@@ -13,8 +13,6 @@ public class CommonTest {
 
     private WebDriver driver;
 
-    private static  final  MY_VARIABLE = "";
-
     public CommonTest() throws IOException {
         final PropertyUtils propertyUtils = new PropertyUtils();
         //String browserDriver = propertyUtils.getProperty("browser.driver");

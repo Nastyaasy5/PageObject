@@ -22,12 +22,12 @@ public class AbstractPage {
     @FindAll({@FindBy(xpath = "//ul[@class=\"list-block\"]//li//div//a[@class=\"g_statistic\"]")})
     public List<WebElement> viewedItemsList;
 
-    public AbstractPage(WebDriver webDriver){
+    public AbstractPage(WebDriver webDriver) {
         this.driver = webDriver;
         PageFactory.initElements(webDriver, this);
     }
 
-    public void moveToElement(WebElement webElement){
+    public void moveToElement(WebElement webElement) {
         Actions actions = new Actions(driver);
         actions.moveToElement(webElement);
         actions.perform();
@@ -62,12 +62,12 @@ public class AbstractPage {
         }
     }
 
-    public void waitForAttributeToBe(WebElement element){
+    public void waitForAttributeToBe(WebElement element) {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.attributeToBe(element, "disabled", ""));
     }
 
-    public void waitForElementToBeVisible(WebElement element){
+    public void waitForElementToBeVisible(WebElement element) {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOf(element));
     }

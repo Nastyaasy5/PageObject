@@ -19,6 +19,7 @@ import java.util.stream.Collectors;
 @DefaultPath(defaultPath = "")
 public class HomePage extends AbstractPage {
 
+
     @FindBy(id = "searchbox")
     private WebElement searchBar;
 
@@ -37,7 +38,8 @@ public class HomePage extends AbstractPage {
     @FindAll({@FindBy(xpath = "//div[@class=\"m-sub-box\" and contains(@style,'block;')]//ul//li")})
     private List<WebElement> subCategoriesList;
 
-    String lineSeparator = System.getProperty("line.separator");
+    private static final String LINE_SEPARATOR = System.getProperty("line.separator");
+    private static final String CATEGORY_SEPARATOR = "------------------------";
 
     private WebDriver driver;
 
@@ -65,14 +67,13 @@ public class HomePage extends AbstractPage {
 
     public Map<String, List<String>> getListOfCategories(){
         Map<String, List<String>> allCategoriesMap = new HashMap<String, List<String>>();
-        String categorySeparator = "------------------------";
 
         for(WebElement category : categoriesList.subList(0,2)){
             //Used categoriesList.subList(0,2) to decrease time of execution of the test
             moveToElement(category);
             hover(category);
-            String categoryTitle = categorySeparator + lineSeparator + category.getText() +
-                    ":" + lineSeparator + categorySeparator + lineSeparator;
+            String categoryTitle = CATEGORY_SEPARATOR + LINE_SEPARATOR + category.getText() +
+                    ":" + LINE_SEPARATOR + CATEGORY_SEPARATOR + LINE_SEPARATOR;
 
             List<String> subCategoriesTitlesList = getListOfSubTitles();
             allCategoriesMap.put(categoryTitle, subCategoriesTitlesList);
@@ -83,7 +84,7 @@ public class HomePage extends AbstractPage {
     public List<String> getListOfSubTitles() {
         return subCategoriesList.stream()
                 .filter(webElement->!webElement.getText().contains("Гид покупателя"))
-                .map(item -> item.getText() + lineSeparator)
+                .map(item -> item.getText() + LINE_SEPARATOR)
                 .collect(Collectors.toList());
     }
 

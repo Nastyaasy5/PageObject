@@ -1,6 +1,7 @@
 package core.rozetka.page_object.rozetka_search_result_page;
 
 import core.common.AbstractPage;
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -19,6 +20,11 @@ public class RozetkaSearchResultPage extends AbstractPage {
     @FindBy(xpath = "//span[@class='hub-i-count']")
     private WebElement compareCounter;
 
+    @FindBy(xpath = "//span[@class='hub-i-count' and text()='2']")
+    private WebElement compareCounter2;
+
+    //private final int QNTY_OF_ADDED_PRODUCTS = Integer.parseInt(compareCounter.getText());
+
     private WebDriver driver;
 
     public RozetkaSearchResultPage(WebDriver webDriver) {
@@ -27,21 +33,19 @@ public class RozetkaSearchResultPage extends AbstractPage {
     }
 
     public void addItemsInCompareList() {
-        hoverAndClick(iPhone7CompareBtn);
-        hoverAndClick(iPhone7PlusCompareBtn);
+        addItemInCompareList(iPhone7CompareBtn);
+        waitForElementToBeShown(compareCounter);
+
+        addItemInCompareList(iPhone7PlusCompareBtn);
+        //Ниже костыль
+        waitForElementToBeShown(compareCounter2);
     }
 
-    /*public void add(WebElement element){
-        int count = Integer.parseInt(compareCounter.getText());
-        if (compareCounter.getText() != "") {
-            if (compareCounter.getText().equals("" + count + "")) {
-                count++;
-            }
-            hover(element);
-            element.click();
-        }
-    }*/
-
+    public void addItemInCompareList(WebElement element){
+        moveToElement(element);
+        hover(element);
+        element.click();
+    }
     public void openComparisonPage(){
         compareBtn.click();
     }

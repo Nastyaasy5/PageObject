@@ -90,7 +90,7 @@ public class HomePage extends AbstractPage {
 
     public void getListOfCategoriesInFile() {
         Map<String, List<String>> allCategoriesMap = getListOfCategories();
-        String fileName = "D://All categories.txt";
+        String fileName = "D:\\Git\\PageObject\\qa_pageObject\\src\\main\\resources\\All categories.txt";
 
         try (FileOutputStream fos = new FileOutputStream(fileName)) {
             for (Map.Entry<String, List<String>> entry : allCategoriesMap.entrySet()) {

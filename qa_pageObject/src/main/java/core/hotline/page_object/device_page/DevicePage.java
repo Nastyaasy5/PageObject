@@ -93,7 +93,7 @@ public class DevicePage extends AbstractPage {
 
     public void getDescriptionInFile(){
         String productTitle = deviceTitle.getText();;
-        String fileName = "D://Description for " + productTitle + ".txt";
+        String fileName = "D:\\Git\\PageObject\\qa_pageObject\\src\\main\\resources\\Description for " + productTitle + ".txt";
 
         try(FileOutputStream fos=new FileOutputStream(fileName))
         {

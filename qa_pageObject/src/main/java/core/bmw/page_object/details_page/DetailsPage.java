@@ -57,8 +57,8 @@ public class DetailsPage extends AbstractPage {
     }
 
     public void getTextInFileFromOpenedSection() {
-        String fileName = "D://All details.txt";
-        String fileName2 = "D://Expected details.txt";
+        String fileName = "D:\\Git\\PageObject\\qa_pageObject\\src\\main\\resources\\All details.txt";
+        String fileName2 = "D:\\Git\\PageObject\\qa_pageObject\\src\\main\\resources\\Expected details.txt";
         String detailsText = detailsList.get(0).getText();
 
         try (FileOutputStream fos = new FileOutputStream(fileName)) {

@@ -27,7 +27,7 @@ public class DetailsPageTest extends CommonTest {
     }
 
     @Test
-    public void compareActAndExpInfoInDetailsTesting() throws InterruptedException {
+    public void compareActAndExpInfoInDetailsTesting() {
         HomePage homePage = new HomePage(getDriver());
         BMWCarPage BMWCarPage = new BMWCarPage(getDriver());
         DetailsPage detailsPage = new DetailsPage(getDriver());

@@ -48,7 +48,7 @@ public class DetailsPage extends AbstractPage {
 
     }
 
-    public void openFirstSection() throws InterruptedException {
+    public void openFirstSection() {
         moveToElement(firstSection);
         firstSection.click();
         //hardcode
@@ -56,7 +56,7 @@ public class DetailsPage extends AbstractPage {
         firstSection.click();
     }
 
-    public void getTextInFileFromOpenedSection() throws InterruptedException {
+    public void getTextInFileFromOpenedSection() {
         String fileName = "D://All details.txt";
         String fileName2 = "D://Expected details.txt";
         String detailsText = detailsList.get(0).getText();

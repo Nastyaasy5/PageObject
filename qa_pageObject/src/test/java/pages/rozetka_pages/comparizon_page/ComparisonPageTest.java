@@ -26,7 +26,7 @@ public class ComparisonPageTest extends CommonTest {
     }
 
     @Test
-    public void comparePropertiesTesting() throws InterruptedException {
+    public void comparePropertiesTesting() {
         RozetkaHomePage homePage = new RozetkaHomePage(getDriver());
         RozetkaSearchResultPage searchResultPage = new RozetkaSearchResultPage(getDriver());
         RozetkaComparisonPage comparizonPage = new RozetkaComparisonPage(getDriver());

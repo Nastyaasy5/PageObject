@@ -38,7 +38,7 @@ public class HomePage extends AbstractPage {
     @FindAll({@FindBy(xpath = "//div[@class=\"m-sub-box\" and contains(@style,'block;')]//ul//li")})
     private List<WebElement> subCategoriesList;
 
-    private static final String LINE_SEPARATOR = System.getProperty("line.separator");
+
     private static final String CATEGORY_SEPARATOR = "------------------------";
 
     private WebDriver driver;

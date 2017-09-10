@@ -31,7 +31,7 @@ public class RozetkaComparisonPage extends AbstractPage {
         compareItemsBtn.click();
     }
 
-    public void magic(){
+    public void comparePropertiesAreSame(){
         final String[] VALUES_TO_COMPARE = {"Тип матрицы", "Количество точек касания", "Поддержка 3G"};
         Map<String, String> firstItemMap = new HashMap<>();
         Map<String, String> secondItemMap = new HashMap<>();
@@ -46,7 +46,7 @@ public class RozetkaComparisonPage extends AbstractPage {
     }
 
     public void compareMapsAreEqual(Map map1, Map map2){
-            Assert.assertTrue("Properties are different for items", map1.entrySet().containsAll(map2.entrySet())
+            Assert.assertTrue("Selected roperties are different for products!", map1.entrySet().containsAll(map2.entrySet())
                     && map2.entrySet().containsAll(map1.entrySet()));
         }
     }

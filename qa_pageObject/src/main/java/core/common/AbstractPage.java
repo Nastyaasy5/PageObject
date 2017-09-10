@@ -22,6 +22,8 @@ public class AbstractPage {
     @FindAll({@FindBy(xpath = "//ul[@class=\"list-block\"]//li//div//a[@class=\"g_statistic\"]")})
     public List<WebElement> viewedItemsList;
 
+    public static final String LINE_SEPARATOR = System.getProperty("line.separator");
+
     public AbstractPage(WebDriver webDriver) {
         this.driver = webDriver;
         PageFactory.initElements(webDriver, this);

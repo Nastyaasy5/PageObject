@@ -11,10 +11,10 @@ import pages.common.CommonTest;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-public class ComparisonPage extends CommonTest {
+public class ComparisonPageTest extends CommonTest {
 
 
-    public ComparisonPage() throws IOException {
+    public ComparisonPageTest() throws IOException {
     }
 
     @Before
@@ -26,7 +26,7 @@ public class ComparisonPage extends CommonTest {
     }
 
     @Test
-    public void comparePropertiesTesting(){
+    public void comparePropertiesTesting() throws InterruptedException {
         RozetkaHomePage homePage = new RozetkaHomePage(getDriver());
         RozetkaSearchResultPage searchResultPage = new RozetkaSearchResultPage(getDriver());
         RozetkaComparisonPage comparizonPage = new RozetkaComparisonPage(getDriver());
@@ -35,7 +35,7 @@ public class ComparisonPage extends CommonTest {
         searchResultPage.addItemsInCompareList();
         searchResultPage.openComparisonPage();
         comparizonPage.openListOfParameters();
-        comparizonPage.magic();
+        comparizonPage.comparePropertiesAreSame();
     }
 
     @After
